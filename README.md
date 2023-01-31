@@ -20,3 +20,13 @@ The full activation seqeunce follows
 Using VIVADO create an IP using verilog code and create a project to make block desgin of system.
 ![block diagram](https://user-images.githubusercontent.com/33273567/215675299-fdb3158c-a9fc-4fb9-9bdc-bc657c748985.png)
 After connecting whole module, Generate bitstream to run code on VITIS.
+
+## Board test
+
+After connecting board to VITIS build project with PS.c file and run it on board. Then the result will be like blelow.
+![image](https://user-images.githubusercontent.com/33273567/215677168-3ac80333-e03f-4f82-8d25-ee1300b24290.png)
+This result shows that the time usage of our accelerator was much lesser(11.40+13.44+4.71micro seconds) than comparson done on PS region(104.99mircro seconds).
+
+##Citing
+This project is based on matbi's lecture 
+https://www.inflearn.com/users/@aifpga
