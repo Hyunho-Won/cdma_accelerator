@@ -27,6 +27,7 @@ After connecting board to VITIS build project with PS.c file and run it on board
 ![image](https://user-images.githubusercontent.com/33273567/215677168-3ac80333-e03f-4f82-8d25-ee1300b24290.png)
 This result shows that the time usage of our accelerator was much lesser(11.40+13.44+4.71micro seconds) than comparson done on PS region(104.99mircro seconds).
 
-##Citing
+## Citing
+
 This project is based on matbi's lecture 
 https://www.inflearn.com/users/@aifpga
