@@ -259,7 +259,7 @@ int main (void) {
 
 			print("DMA in interrupt mode\r\n");
 			print("DDR to BRAM Transfer start\r\n");
-			//½Ã°£ ÃøÁ¤
+			//ì‹œê°„ ì¸¡ì •
 			XTime_GetTime(&tStart);
 			//ddr to bram0
 			XAxiCdma_IntrEnable(&xcdma, XAXICDMA_XR_IRQ_ALL_MASK);
@@ -295,7 +295,7 @@ int main (void) {
 			} while( (read_data & IDLE) != IDLE);
 			// start core
 			printf("Accelerator Start\n");
-			Xil_Out32((XPAR_ACCELERATOR_0_BASEADDR) + (CTRL_REG*4), (u32)(numofbytes | 0x80000000)); // MSB run //num_cnt 1·ÎÇØ¼­ ÇÑ¹ø¸¸ µ¹°ÔÇÔ numofbyte¿¡¼­ ¹Ù²Ş.
+			Xil_Out32((XPAR_ACCELERATOR_0_BASEADDR) + (CTRL_REG*4), (u32)(numofbytes | 0x80000000)); // MSB run //num_cnt 1ë¡œí•´ì„œ í•œë²ˆë§Œ ëŒê²Œí•¨ numofbyteì—ì„œ ë°”ê¿ˆ.
 			// wait donee
 			do{
 				read_data = Xil_In64((XPAR_ACCELERATOR_0_BASEADDR) + (STATUS_REG*4));
