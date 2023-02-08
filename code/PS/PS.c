@@ -13,14 +13,13 @@
 #include <assert.h>
 #include <stdlib.h>
 
-#define WRITE 1
 #define CORE_RUN 2
-#define READ 3
 #define AXI_DATA_BYTE 4
  
 #define IDLE 1
-#define RUN 1 << 1
-#define DONE 1 << 2
+#define READ 1 << 1
+#define WRITE 1 << 2
+#define DONE 1 << 3
 
 #define CTRL_REG 0
 #define STATUS_REG 1
